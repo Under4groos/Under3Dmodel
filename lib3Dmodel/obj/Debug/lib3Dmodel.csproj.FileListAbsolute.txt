@@ -1,0 +1,6 @@
+C:\Users\UnderKo\source\repos\Under3Dmodel\lib3Dmodel\bin\Debug\lib3Dmodel.dll
+C:\Users\UnderKo\source\repos\Under3Dmodel\lib3Dmodel\bin\Debug\lib3Dmodel.pdb
+C:\Users\UnderKo\source\repos\Under3Dmodel\lib3Dmodel\obj\Debug\lib3Dmodel.csprojAssemblyReference.cache
+C:\Users\UnderKo\source\repos\Under3Dmodel\lib3Dmodel\obj\Debug\lib3Dmodel.csproj.CoreCompileInputs.cache
+C:\Users\UnderKo\source\repos\Under3Dmodel\lib3Dmodel\obj\Debug\lib3Dmodel.dll
+C:\Users\UnderKo\source\repos\Under3Dmodel\lib3Dmodel\obj\Debug\lib3Dmodel.pdb

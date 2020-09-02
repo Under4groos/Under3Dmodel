@@ -1,0 +1,13 @@
+C:\Users\UnderKo\source\repos\Under3Dmodel\Under3Dmodel\bin\Debug\Under3Dmodel.exe.config
+C:\Users\UnderKo\source\repos\Under3Dmodel\Under3Dmodel\bin\Debug\Under3Dmodel.exe
+C:\Users\UnderKo\source\repos\Under3Dmodel\Under3Dmodel\bin\Debug\Under3Dmodel.pdb
+C:\Users\UnderKo\source\repos\Under3Dmodel\Under3Dmodel\bin\Debug\lib3Dmodel.dll
+C:\Users\UnderKo\source\repos\Under3Dmodel\Under3Dmodel\bin\Debug\lib3Dmodel.pdb
+C:\Users\UnderKo\source\repos\Under3Dmodel\Under3Dmodel\obj\Debug\Under3Dmodel.csprojAssemblyReference.cache
+C:\Users\UnderKo\source\repos\Under3Dmodel\Under3Dmodel\obj\Debug\Under3Dmodel.Form1.resources
+C:\Users\UnderKo\source\repos\Under3Dmodel\Under3Dmodel\obj\Debug\Under3Dmodel.Properties.Resources.resources
+C:\Users\UnderKo\source\repos\Under3Dmodel\Under3Dmodel\obj\Debug\Under3Dmodel.csproj.GenerateResource.cache
+C:\Users\UnderKo\source\repos\Under3Dmodel\Under3Dmodel\obj\Debug\Under3Dmodel.csproj.CoreCompileInputs.cache
+C:\Users\UnderKo\source\repos\Under3Dmodel\Under3Dmodel\obj\Debug\Under3Dmodel.csproj.CopyComplete
+C:\Users\UnderKo\source\repos\Under3Dmodel\Under3Dmodel\obj\Debug\Under3Dmodel.exe
+C:\Users\UnderKo\source\repos\Under3Dmodel\Under3Dmodel\obj\Debug\Under3Dmodel.pdb

@@ -1,0 +1,44 @@
+ public  void Draw()
+        {
+            label1.Text = "Угол:" + trackBar2.Value.ToString();
+            label2.Text = "Радиус:" + trackBar1.Value.ToString();
+            List<Point> P = new List<Point>();
+            Graphics G = this.CreateGraphics();
+            G.Clear(Color.FromArgb(255, 255, 255));
+
+            G.DrawEllipse(
+                    Pens.Black,
+                    (float)(this.Width / 2 ),
+                    (float)(this.Height / 2 ),
+                    5,
+                    5
+                );
+
+            for (int i = 0; i < trackBar2.Value + 1; i++)
+            {
+                
+                P.Add( 
+                    new Point(
+                       (int) (this.Width / 2 + Math.Sin(NewAng.AngleToRadians(i)) * trackBar1.Value),
+                       (int) (this.Height / 2 + Math.Cos(NewAng.AngleToRadians(i)) * trackBar1.Value)
+                    )
+                );
+            }
+            if (P.Count < 2)
+                return;
+            G.DrawLines(Pens.Red, P.ToArray());
+            
+          
+           
+
+        }
+
+        public  Point ToScreen( Vector Position3D, Point Position2D , Angle angle )
+        {
+            int PosX = (int)Position3D.X * Size;
+            int PosY = (int)Position3D.Y * Size;
+            int PosZ = (int)Position3D.Z * Size;
+            double res_x = -PosZ * System.Math.Sin(angle.pitch) + PosX * System.Math.Cos(angle.pitch) + Position2D.X;
+            double res_y = -(PosZ * System.Math.Cos(angle.pitch) + PosX * System.Math.Sin(angle.pitch)) * System.Math.Sin(angle.yaw) + PosY * System.Math.Cos(angle.pitch) + Position2D.Y;
+            return new Point((int)(res_x), (int)(res_y));
+        }

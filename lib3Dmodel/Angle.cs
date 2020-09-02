@@ -5,31 +5,47 @@ namespace lib3Dmodel
 {
     public class Angle
     {
-        public float pitch
+        public double pitch
         {
             set; get;
         }
-        public float yaw
+        public double yaw
         {
             set; get;
         }
-        public float roll
+        public double roll
         {
             set; get;
         }
-        public override string ToString()
+
+        public Angle(double p, double y, double r)
         {
-            return "Pitch: " + this.pitch.ToString() + "Yaw: " + this.yaw.ToString() + "Roll: " + this.roll.ToString();
+            pitch = p;
+            yaw = y;
+            roll = r;
         }
-        public float AngleToRadians(int Ang)
+        public Angle()
+        {
+            pitch = 0.0;
+            yaw = 0.0;
+            roll = 0.0;
+        }
+        /// <summary>
+        /// "Pitch: " + this.pitch.ToString() + "Yaw: " + this.yaw.ToString() + "Roll: " + this.roll.ToString()
+        /// </summary>
+        /// <returns></returns>
+        public override string ToString() 
+            => "Pitch: " + this.pitch.ToString() + "Yaw: " + this.yaw.ToString() + "Roll: " + this.roll.ToString();
+
+        public double AngleToRadians(int Ang)
         {
             double rad = (Ang * Math.PI) / 180;
-            return (float)rad;
+            return rad;
         }
-        public float RadiansToAngle(float rad)
+        public double RadiansToAngle(double rad)
         {
             double Ang = rad * 90 / (2 * Math.PI);
-            return (float)Ang;
+            return Ang;
         }
 
     }
