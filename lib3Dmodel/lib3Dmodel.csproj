@@ -44,6 +44,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Angle.cs" />
+    <Compile Include="Color.cs" />
+    <Compile Include="images.cs" />
+    <Compile Include="lib\libFile.cs" />
     <Compile Include="Redering3D.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Vector.cs" />

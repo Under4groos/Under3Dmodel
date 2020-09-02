@@ -33,7 +33,7 @@ namespace lib3Dmodel
         {
             get;set;
         }
-        public void Draw3D()
+        public void Draw3D( lib3Dmodel.Color[] C)
         {
             if (DrawPanel == null)
                 return;
@@ -45,15 +45,11 @@ namespace lib3Dmodel
 
             for (int i = 0; i < ListVectors.Count; i++)
             {
-                P = new Vector().ToScreen(ListVectors[i], new Point(DrawPanel.Width/2 , DrawPanel.Height/2), Ang);
-                for (int d = 0; d < ListVectors.Count; d++)
-                {
-                    
-                    P2 = new Vector().ToScreen(ListVectors[d], new Point(DrawPanel.Width / 2, DrawPanel.Height / 2), Ang);
+                P = new Vector().ToScreen(ListVectors[i], new Point(DrawPanel.Width/2  , DrawPanel.Height/2), Ang);
 
-                    G.DrawLine(Pens.Red, P, P2);
-                    
-                }
+                // G.DrawLine(Pens.Black, P, P2);
+                lib3Dmodel.Color Col = C[i];
+                G.DrawRectangle(new Pen(System.Drawing.Color.FromArgb(Col.r , Col.g , Col.b )), P.X, P.Y, 1, 5);
             }
             
 

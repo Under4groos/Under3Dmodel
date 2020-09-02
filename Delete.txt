@@ -42,3 +42,11 @@
             double res_y = -(PosZ * System.Math.Cos(angle.pitch) + PosX * System.Math.Sin(angle.pitch)) * System.Math.Sin(angle.yaw) + PosY * System.Math.Cos(angle.pitch) + Position2D.Y;
             return new Point((int)(res_x), (int)(res_y));
         }
+
+
+
+ for (int i = 0; i < 10; i++)
+            {
+                draw.AddVector(new Vector(Math.Sin(i) * 2, Math.Cos(i) * 2, Math.Tan(i) * 2));
+            }
+           

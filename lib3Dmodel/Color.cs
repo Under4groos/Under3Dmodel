@@ -31,6 +31,9 @@ namespace lib3Dmodel
             g = 0;
             b = 0;
         }
-
+        public override string ToString()
+        {
+            return "R: " +  r.ToString() + " G: " + r.ToString() + " B: " + r.ToString();
+        }
     }
 }

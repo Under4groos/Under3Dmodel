@@ -50,9 +50,9 @@ namespace lib3Dmodel
 
         public  Point ToScreen( Vector Position3D, Point Position2D , Angle angle )
         {
-            double PosX = (double)Position3D.X * 100;
-            double PosY = (double)Position3D.Y * 100;
-            double PosZ = (double)Position3D.Z * 100;
+            double PosX = (double)Position3D.X * 2;
+            double PosY = (double)Position3D.Y * 2;
+            double PosZ = (double)Position3D.Z * 2;
 
          
           
